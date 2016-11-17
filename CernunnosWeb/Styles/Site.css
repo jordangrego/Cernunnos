@@ -1,0 +1,355 @@
+﻿html, body
+{
+    height:100%; /* IE6: treaded as min-height*/
+}
+
+form
+{
+    position:relative;
+    margin:0 auto; /* center, not in IE5 */
+    height:auto !important; /* real browsers */
+    height:100%; /* IE6: treaded as min-height*/
+    min-height:100%; /* real browsers */
+    padding-bottom:60px;
+}
+
+textarea { 
+    resize: none; 
+}
+
+a:focus 
+{
+    outline:none !important;
+}
+
+/* Diminue o padding do nome do sistema no cabeçalho para caber a logo */
+.navbar-brand.imagem {
+    padding: 9px 20px 7px 5px!important;
+}
+
+/* Diminue a margem entre o cabeçalho e o breadcrumb */
+.navbar 
+{
+    margin-bottom:8px;    
+}
+
+/* Expande o breadcrumb por toda a linha */
+.breadcrumb
+{
+    display: block;
+}
+
+/* Retira o botão de fechar no ajax loader*/
+.no-close .ui-dialog-titlebar {
+  display: none;
+}
+
+/* Aumenta o z-indez do jQuery para ser maior que o nav-bar do bootstrap */
+.ui-front {
+    z-index: 2000;
+}
+
+.obrigatorio{ color:Red; }
+
+/* CSS generico para colocar margem superior */
+.top40 { margin-top:40px; }
+
+#footer
+{
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+h4
+{
+    margin-bottom:20px;
+}
+
+legend {
+    font-size: 16px;
+}
+
+/* Tira o padding das colunas do bootstrap */
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.no-side-padding {
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+   margin-left: 0 !important;
+   margin-right: 0 !important;
+}
+
+.no-left-padding {
+   padding-left: 0 !important;
+   margin-left: 0 !important;
+}
+
+.no-right-padding {
+   padding-right: 0 !important;
+   margin-right: 0 !important;
+}
+
+.no-bottom-padding {
+   padding-bottom: 0 !important;
+   margin-bottom: 0 !important;
+}
+
+.full-width
+{
+  width:100%;
+}
+
+/* Tira a da tabela para nao aparecer no paginação */
+.table-bordered
+{
+    border-style:none !important;    
+}
+/* Coloca borda no header */
+.table>thead:first-child>tr:first-child>th
+{
+    border: 1px solid #dddddd !important;
+    text-align:center;
+}
+
+/* Formata a paginação da Grid */
+.grid-pager>td
+{
+    background-color:transparent !important;
+    border-style:none !important;
+}
+.grid-pager table
+{
+    margin:0 auto; /* center, not in IE5 */
+    border-collapse: separate !important;
+}
+
+.grid-pager td:first-child {
+    -moz-border-radius: 6px 0 0 6px;
+    -webkit-border-radius: 6px 0 0 6px;
+    border-radius: 6px 0 0 6px;
+    border: 1px solid #dddddd;
+}
+
+.grid-pager td:last-child {
+    -moz-border-radius: 0px 6px 6px 0px;
+    -webkit-border-radius: 0px 6px 6px 0px;
+    border-radius: 0px 6px 6px 0px;
+    border: 1px solid #dddddd;
+}
+.grid-pager td
+{
+    color: #999999;
+    background-color:transparent !important;
+    padding: 6px 6px;
+    border: 1px solid #ddd;
+}
+.grid-pager td td a
+{
+    padding:3px 5px 3px 5px;
+}
+.grid-pager td td span
+{
+    color:#ffffff;
+    font-weight:bold;
+    background-color:#1d618f;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    padding:3px 5px 3px 5px;
+}
+
+.report-viewer
+{
+    margin:0 auto;
+    border: 1px solid #d0d6da;
+    /*Corrir BUG do IE 9,10*/
+    line-height:normal !important;
+}
+
+/* Formata o radiobutton list do asp */
+.radio-inline label, .checkbox-inline label {
+    font-weight: normal;
+}
+
+.error, .help-block
+{
+    white-space:nowrap !important;  
+}
+
+
+.alert > .modal-footer {
+    border-top: none;
+}
+
+.ajax__tab_body
+{
+    border: 1px solid #dddddd !important;
+    border-top: 0 !important;
+}
+
+.top10 
+{
+    margin-top: 10px;
+}
+
+.top5
+{
+    margin-top: 5px;
+}
+
+.top20
+{
+    margin-top: 20px;
+}
+
+.top25
+{
+    margin-top: 25px;
+}
+
+.top30 
+{
+    margin-top: 30px;
+}
+
+.ajax__tab_panel .well
+{
+    margin-bottom:0px !important;
+}
+
+.control-label
+{
+    white-space:nowrap !important;    
+}
+
+.btn-fixed-width
+{
+    width:115px;
+    padding-left:9px;
+}
+
+.glyphicon-remove-sign
+{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* Inclui a seta para o accordion no bootstrap */
+.panel-heading-collapse h4:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";    
+    float: right; 
+    color: grey; 
+}
+.panel-heading-collapse h4.collapsed:after {
+    content: "\e080";
+}
+.panel-title-collapse{
+    cursor:pointer;
+}
+
+.highlight {
+    padding: 9px 14px;
+    margin-bottom: 5px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    border-radius: 4px;
+}
+
+.highlight pre {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    border: 0;
+    white-space: nowrap;
+}
+
+.no-wrap
+{
+    white-space:nowrap !important;  
+}
+
+.tooltip {
+    z-index: 2000 !important;
+}
+
+#report
+{
+    height:100%;
+}
+
+.page-header
+{
+    margin: 5px 0 17px !important;
+}
+
+.ui-datepicker th 
+{
+    padding: 2px 1px !important;
+}
+
+.data
+{
+    width:80px !important;
+}
+
+.no-float
+{
+    float:none !important;
+}
+
+/*Upload.ascx*/
+.file-upload input[type="file"] {
+    cursor:pointer;
+    position:absolute;
+    top:0px;
+    opacity:0;
+}
+
+.file-upload {
+    position:absolute;
+    overflow:hidden;
+    height:30px;
+    cursor:pointer;
+    width:86px;
+    margin-left:8px;
+}
+
+.file-upload-falso
+{
+    margin-left:8px;    
+}
+
+body .modal-xl {
+  width: 90%; /* desired relative width */
+  /* place center */
+  margin-left:auto;
+  margin-right:auto; 
+}
+
+.chart-background
+{
+    background-color:#FFFFFF;    
+}
+
+.modal-report
+{
+    width:95% !important;
+    min-width:844px;
+    margin-top:30px !important;
+}
+
+.well-noborder
+{
+    padding-bottom:0px !important;
+}
+
+.btn-group {
+    margin-bottom: 3px;
+}

@@ -1,0 +1,10 @@
+﻿<browsers>
+  <browser refID="Default">
+    <controlAdapters>
+      <adapter controlType ="System.Web.UI.WebControls.SiteMapPath" adapterType ="CernunnosWeb.Adapters.SiteMapPathAdapter" />
+      <adapter controlType ="System.Web.UI.WebControls.TextBox" adapterType ="CernunnosWeb.Adapters.TextBoxAdapter" />
+      <adapter controlType ="System.Web.UI.WebControls.Menu" adapterType ="CernunnosWeb.Adapters.MenuAdapter" />
+      <adapter controlType ="AjaxControlToolkit.TabContainer" adapterType ="CernunnosWeb.Adapters.TabContainerAdapter" />
+    </controlAdapters>
+  </browser>
+</browsers>

@@ -3,3 +3,8 @@
 ################################################################################
 
 /CernunnosLib/bin/Debug
+/.vs
+/CernunnosLib/obj/Debug
+/CernunnosWeb/bin
+/CernunnosWeb/obj/Debug
+/packages
